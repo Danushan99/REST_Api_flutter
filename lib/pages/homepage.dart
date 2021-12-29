@@ -15,7 +15,14 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.teal,
         title: const Text("News App"),
       ),
-      body: Container(),
+      body: Container(
+        child: ListView.builder(itemBuilder: (context, index) {
+          return Container(
+            height: 100,
+            color: Colors.blue,
+          );
+        }),
+      ),
     );
   }
 }
