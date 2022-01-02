@@ -6,7 +6,6 @@ import 'package:http/http.dart' as http;
 class API_Manager {
   void getNews() async {
     var client = http.Client();
-    var response = await client.get(Strings.news_url);
-    
+    var response = await client.get(Uri.parse(Strings.news_url));
   }
 }
